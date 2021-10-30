@@ -1,0 +1,37 @@
+.nav {
+    background-color: rgb(170, 168, 32);
+    grid-area: n;
+    padding: 25px;
+  }
+.item {
+    border: 1px solid rgb(201, 202, 174);
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px;
+  }
+.item a {
+      text-decoration: none;
+      color: rgb(199, 178, 178);
+      padding: 10px;
+  }
+.item a.activeLink {
+      color: gold;
+  }
+  .item:hover {
+      background-color: rgb(145, 100, 43);
+  }
+  .friends {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .itfriends img {
+    width: 50px;
+  }
+  .titleFriends {
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    padding: 28px 0 10px 0;
+    color: rgb(199, 165, 165);
+  }
