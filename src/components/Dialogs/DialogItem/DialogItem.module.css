@@ -1,0 +1,10 @@
+
+.dialogsItem {
+  padding: 15px;
+  background-color: rgb(12, 3, 36);
+  border: 10px solid black;
+ 
+}
+.dialogsItem .active {
+  color: brown;
+}

@@ -1,0 +1,35 @@
+.div {
+  font-size: 25px;
+}
+.dialog {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  background-color: green;
+  color:white;
+}
+.dialogsItem {
+ 
+  padding: 15px;
+  background-color: rgb(50, 28, 109);
+ 
+}
+.dialogItemEl {
+  border: black 1px solid;
+ 
+}
+
+
+.dialogsItem .active {
+  color: brown;
+}
+.messages {
+  background-color: rgb(44, 161, 40);
+}
+.message {
+  background-color: rgb(105, 29, 82);
+}
+.dialog a {
+
+  text-decoration: none;
+  color: white;
+}
