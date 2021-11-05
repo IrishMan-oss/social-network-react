@@ -1,4 +1,49 @@
 .myposts {
-  color: red;
-  background: rgb(134, 119, 119);
+  color: rgb(82, 44, 44);
+  background: rgb(149, 194, 164);
+}
+.btn_addPost {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 40px;
+  margin: 25px 15px 15px 10px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  background-color: #38db8a;
+  box-shadow: 0 2px #21b9a0;
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+  touch-action: manipulation;
+  vertical-align: top;
+}
+.textareaPost {
+  margin-top: 15px;
+  margin-left: 10px;
+  resize: vertical;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
+  height: 50px;
+}
+.myPostSubTiile {
+  margin-left: 10px;
+  font-size: 20px;
+  color: bisque;
+  border-bottom: 2px solid rgb(72, 67, 67);
+  width: 150px;
+}
+.myPostTiile{
+  width: 150px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid rgb(72, 67, 67);
 }

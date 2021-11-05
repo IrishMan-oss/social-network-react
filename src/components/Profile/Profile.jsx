@@ -10,9 +10,8 @@ const Profile = (props) => {
       <ProfileInfo className={s.deskriptionBlock} />
       <MyPosts
         posts={props.profilePage.postData}
-        addPost={props.addPost}
+        dispatch={props.dispatch}
         newPostText={props.profilePage}
-        updateNewPostText={props.updateNewPostText}
       />
     </div>
   );

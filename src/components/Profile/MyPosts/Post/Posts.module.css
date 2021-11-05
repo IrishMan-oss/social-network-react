@@ -1,12 +1,17 @@
 .post {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+    border-radius: 15px;
     background-color: thistle;
-    color: rgb(54, 61, 61);
+    color: rgb(17, 27, 27);
 }
 .post img {
+    padding-left: 10px;
     width: 50px;
     height: 50px;
 }
 .post span {
-    color: red;
+    color: rgb(231, 71, 71);
     font-weight: 700;
 }

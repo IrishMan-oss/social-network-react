@@ -2,6 +2,19 @@
     display: block;
     margin: 20px auto;
     border-radius: 30px;
-    width: 90%;
-    height: 500px;
+    width: 95%;
+    height: 300px;
+  }
+  .content {
+    border-radius: 10px;
+  }
+  .deskriptionBlock {
+    color: rgb(75, 69, 69);
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .spanTittleRpofile {
+    margin-left: 10px;
   }

@@ -7,7 +7,7 @@ const ProfileInfo = (props) => {
         <div className={s.content}>
           <img src="https://poster.nicefon.ru/2016_05/23/1080x610/18500d4e3e39ffefef6fe.jpg"></img>  
         <div className={s.deskriptionBlock}>
-          ava + deskription
+          <span className={s.spanTittleRpofile}>Avatar + deskription</ span>
         </div>
       </div>
  )

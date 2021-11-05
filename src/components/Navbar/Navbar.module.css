@@ -1,24 +1,25 @@
 .nav {
-    background-color: rgb(170, 168, 32);
+    background-color: rgb(124, 196, 100);
     grid-area: n;
     padding: 25px;
   }
 .item {
-    border: 1px solid rgb(201, 202, 174);
-    border-radius: 25px;
+    font-weight: 700;
+    border: 1px solid rgb(61, 61, 36);
+    border-radius: 15px;
     margin: 10px;
     padding: 10px;
   }
 .item a {
       text-decoration: none;
-      color: rgb(199, 178, 178);
+      color: rgb(82, 62, 62);
       padding: 10px;
   }
 .item a.activeLink {
-      color: gold;
+      color: rgb(58, 59, 58);
   }
   .item:hover {
-      background-color: rgb(145, 100, 43);
+      background-color: rgb(100, 185, 136);
   }
   .friends {
     display: flex;
@@ -33,5 +34,5 @@
     font-size: 15px;
     text-align: center;
     padding: 28px 0 10px 0;
-    color: rgb(199, 165, 165);
+    color: rgb(46, 37, 37);
   }

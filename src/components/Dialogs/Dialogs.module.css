@@ -4,32 +4,36 @@
 .dialog {
   display: grid;
   grid-template-columns: 2fr 10fr;
-  background-color: green;
-  color:white;
+  background-color: rgb(155, 207, 155);
+  color:rgb(198, 230, 216);
 }
 .dialogsItem {
- 
   padding: 15px;
-  background-color: rgb(50, 28, 109);
- 
-}
-.dialogItemEl {
-  border: black 1px solid;
- 
-}
-
-
-.dialogsItem .active {
-  color: brown;
+  background-color: rgb(19, 82, 68);
 }
 .messages {
-  background-color: rgb(44, 161, 40);
+  background-color: rgb(92, 156, 90);
+
 }
 .message {
   background-color: rgb(105, 29, 82);
 }
 .dialog a {
-
+  display: block;
   text-decoration: none;
   color: white;
+  border-radius: 5px;
+  background-color: cadetblue;
+  width: 70px;
+  margin-bottom: 5px;
+}
+.messageItem {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  background-color: cadetblue;
+  width: 200px;
+  margin-bottom: 5px;
 }

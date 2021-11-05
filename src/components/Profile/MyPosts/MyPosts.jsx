@@ -1,42 +1,40 @@
 import React from "react";
 import s from "./MyPosts.module.css";
 import Posts from "./Post/Posts";
+import {
+  addPostsActionCreate,
+  updateNewPostActionCreater,
+} from "../../../redux/dialog-reducer";
 
 const MyPosts = (props) => {
   
   let postsData = props.posts.map((p) => (
-    
     <Posts message={p.message} like={p.like} />
   ));
 
   let textAreaPostElement = React.createRef();
 
   let addPosts = () => {
-    props.addPost();
-   
+    props.dispatch(addPostsActionCreate());
   };
 
   let onPostChange = () => {
     let text = textAreaPostElement.current.value;
-    props.updateNewPostText(text);
-
+    // let action = {type: 'UPDATE-NEW-POST-TEXT', newText: text}
+    props.dispatch(updateNewPostActionCreater(text));
   };
-
 
   return (
     <div className={s.myposts}>
       <textarea
         onChange={onPostChange}
-        // name="post"
-        // id="textarea"
-        // cols="10"
-        // rows="2"
         ref={textAreaPostElement}
         value={props.newPostText.newPostText}
+        className={s.textareaPost}
       />
-      <button onClick={addPosts}>Add</button>
-      my posts
-      <div>new posts new posts new posts</div>
+      <button onClick={addPosts} className={s.btn_addPost}>Add</button>
+        <h3 className={s.myPostSubTiile}>My posts</h3>
+      <div className={s.myPostTiile}>new posts</div>
       {postsData}
     </div>
   );
