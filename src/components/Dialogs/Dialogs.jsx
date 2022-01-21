@@ -2,29 +2,28 @@ import React from 'react' ;
 import s from './Dialogs.module.css';
 import DialogItem from './DialogItem/DialogItem';
 import Message from './Message/Message';
-import {addMessageActionCreate, updateMessageActionCreate} from '../../redux/profile-reducer'
+import {addMessageActionCreate, updateMessageActionCreate} from '../../redux/dialog-reducer'
 
 
 const Dialogs = (props) => {
-debugger
-  let dialogElements = props.dialog.dialogsData
+ debugger
+ let state = props.dialogPage
+  let dialogElements = state.dialogsData
   .map(dialog => <DialogItem name={dialog.name} id={dialog.id}/>)
 
-  let messageElements =  props.mes.message
+let messageElements = state.message
   .map(messages => <Message message={messages.message} id={messages.id}/>)
 
-  let textAreaElement = React.createRef()
+let textAreaElement = React.createRef()
 
-  let addMessage = () => {
+let addMessage = () => {
    props.dispatch(addMessageActionCreate())
     
   }
 
-  let onPostChange = () => {
-    let text = textAreaElement.current.value;
-    props.dispatch(updateMessageActionCreate(text))
-
-  };
+let onPostChange = (body) => {
+    props.sentMessage()
+  }
 
 
     return   ( 
@@ -39,7 +38,7 @@ debugger
           <textarea 
           ref={textAreaElement} 
           onChange={onPostChange}
-          value={props.dialog.newMessageText}
+          value={props.newMessageText}
            />
           </div>
           <div>

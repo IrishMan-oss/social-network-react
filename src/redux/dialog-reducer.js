@@ -1,35 +1,54 @@
 const ADD_MESSAGE = "ADD-MESSAGE";
-const UPDATE_NEW_MESSAGE_TEXT = "UPDATE_NEW_MESSAGE_TEXT";
+const UPDATE_NEW_MESSAGE_BODY = "UPDATE_NEW_MESSAGE_BODY";
 
-export const dialogReducer = (state, action) => {
-  switch (action.type) {
-    case ADD_MESSAGE:
-      let newMessage = {
-        id: 5,
-        message: state.newMessageText,
-      };
-      state.message.push(newMessage);
-      state.newMessageText = "";
-      return state
-    case UPDATE_NEW_MESSAGE_TEXT:
-      state.newMessageText = action.newText;
-      return state
-    default :
-    return state;
-  }
 
+let initialState = {
+    message: [
+      { id: 1, message: "Hi" },
+      { id: 2, message: "How are you" },
+    ],
+    newMessageText: "Push",
+    dialogsData: [
+      { id: 1, name: "Maks" },
+      { id: 2, name: "Stas" },
+      { id: 3, name: "Slava" },
+      { id: 4, name: "Sanya" },
+    ],
   
 }
 
-export let addPostsActionCreate = () => {
+export const dialogReducer = (state = initialState, action) => {
+  let stateCopy = {
+    ...state,
+    message: {...state.message}
+  }
+
+  
+  switch (action.type) {
+    case ADD_MESSAGE:{
+      let body = stateCopy.newMessageBody
+      stateCopy.newMessageBody = "";
+      stateCopy.message.push({id:4, message: body});
+      return stateCopy
+    }
+    case UPDATE_NEW_MESSAGE_BODY:
+      stateCopy.newMessageBody = action.body;
+      return stateCopy
+    default:
+    return state
+  }
+ 
+}
+
+export const addMessageActionCreate = () => {
     return {
-      type: 'ADD-POST'
+      type: 'ADD-MESSAGE'
     }
   }
   
-export let updateNewPostActionCreater = (text) => {
-    return {
-      type: 'UPDATE-NEW-POST-TEXT', 
-      newText: text
+export const updateMessageActionCreate = (body) => {
+    return{
+      type: 'UPDATE_NEW_MESSAGE_BODY',
+      body: body
     }
   }

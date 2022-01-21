@@ -1,6 +1,7 @@
 .myposts {
   color: rgb(82, 44, 44);
-  background: rgb(149, 194, 164);
+  background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+
 }
 .btn_addPost {
   display: inline-block;
@@ -15,7 +16,7 @@
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
-  color: #fff;
+  color: rgb(65, 55, 55);
   background-color: #38db8a;
   box-shadow: 0 2px #21b9a0;
   cursor: pointer;
@@ -36,7 +37,7 @@
 .myPostSubTiile {
   margin-left: 10px;
   font-size: 20px;
-  color: bisque;
+  color: rgb(167, 151, 132);
   border-bottom: 2px solid rgb(72, 67, 67);
   width: 150px;
 }

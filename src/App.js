@@ -3,44 +3,25 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import Profile from "./components/Profile/Profile";
-import Dialogs from "./components/Dialogs/Dialogs";
 import News from "./components/News/News";
 import Setting from "./components/SettingApp/Setting";
-
-import { BrowserRouter, Route } from "react-router-dom";
+import {Route } from "react-router-dom";
+import DialogsContainer from "./components/Dialogs/DialogsContainer";
 
 const App = (props) => {
   return (
-    <BrowserRouter>
+
       <div className="app-wrapper">
         <Header />
         <Navbar />
-
         <div className="app-wrapper-content">
-          <Route
-            path="/dialog"
-            render={() => (
-              <Dialogs
-                dialog={props.state.dialogPage}
-                mes={props.state.dialogPage}
-                dispatch={props.dispatch}
-              />
-            )}
-          />
-          <Route
-            path="/profile"
-            render={() => (
-              <Profile
-                profilePage={props.state.profilePage}
-                dispatch={props.dispatch}
-              />
-            )}
-          />
+          <Route path="/dialog" render={() => (<DialogsContainer/>)}/>
+          <Route path="/profile" render={() => <Profile/>}/>
           <Route path="/News" render={() => <News />} />
           <Route path="/Setting" render={() => <Setting />} />
         </div>
       </div>
-    </BrowserRouter>
+   
   );
 };
 

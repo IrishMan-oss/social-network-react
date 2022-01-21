@@ -1,5 +1,5 @@
 .nav {
-    background-color: rgb(124, 196, 100);
+  background: linear-gradient(90deg, #f598a8, #f6edb2);
     grid-area: n;
     padding: 25px;
   }
@@ -19,7 +19,7 @@
       color: rgb(58, 59, 58);
   }
   .item:hover {
-      background-color: rgb(100, 185, 136);
+      background-color: rgb(214, 173, 233);
   }
   .friends {
     display: flex;

@@ -1,8 +1,8 @@
 .content img {
     display: block;
-    margin: 20px auto;
-    border-radius: 30px;
-    width: 95%;
+    margin: 10px auto;
+    border-radius: 20px;
+    width: 98%;
     height: 300px;
   }
   .content {
@@ -10,7 +10,7 @@
   }
   .deskriptionBlock {
     color: rgb(75, 69, 69);
-    background-color: cornflowerblue;
+    background-color: rgb(126, 154, 208);
     border-radius: 5px;
     font-size: 24px;
     font-weight: 600;

@@ -32,7 +32,7 @@ let store = {
     console.log("state change");
   },
 
-  subsc(observer) {
+  subscriber(observer) {
     this._callSubscriber = observer;
   },
 
